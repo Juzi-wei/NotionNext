@@ -80,64 +80,9 @@ const CONFIG = {
   */ 
   STARTER_ABOUT_IMAGE_1: '/images/starter/about/about-image-01.jpg',
   STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-02.jpg',
-  STARTER_ABOUT_TIPS_1: '7000+',
-  STARTER_ABOUT_TIPS_2: '博客站点',
-  STARTER_ABOUT_TIPS_3: '正在线上运行',
-
-  //   FAQ 常见问题模块
-  STARTER_FAQ_ENABLE: true, // 常见问题模块开关
-  STARTER_FAQ_TITLE: '常见问题解答',
-  STARTER_FAQ_TEXT_1: '有任何问题吗？请看这里',
-  STARTER_FAQ_TEXT_2: '我们收集了常见的用户疑问',
-   //
-  STARTER_FAQ_1_QUESTION: 'NotionNext有帮助文档吗？',
-  STARTER_FAQ_1_ANSWER:
-    'NotionNext提供了<a href="https://docs.tangly1024.com/about" className="underline">帮助文档</a>，操作<a href="https://www.bilibili.com/video/BV1fM4y1L7Qi/" className="underline">演示视频</a>，以及<a href="https://docs.tangly1024.com/article/chat-community" className="underline">交流社群</a>来协助您完成网站的搭建部署',
-     //
-  STARTER_FAQ_2_QUESTION: '部署后要如何编写文章？',
-  STARTER_FAQ_2_ANSWER:
-    '您可以在Notion中之间添加或修改类型为Post的页面，内容将被实时同步在站点中，详情参考<a className="underline" href="https://docs.tangly1024.com/article/start-to-write">《帮助文档》</a>',
-     //
-  STARTER_FAQ_3_QUESTION: '站点部署失败，更新失败？',
-  STARTER_FAQ_3_ANSWER:
-    '通常是配置修改错误导致，请检查配置或者重试操作步骤，或者通过Vercel后台的Deployments中找到错误日志，并向网友求助',
-     //
-  STARTER_FAQ_4_QUESTION: '文章没有实时同步？',
-  STARTER_FAQ_4_ANSWER:
-    '先检查Notion_Page_ID是否正确配置，其次由于博客的每个页面都有独立缓存，刷新网页后即可解决',
-     //
-  // 团队成员区块
-  STARTER_TEAM_ENABLE: true, // 团队成员区块开关
-  STARTER_TEAM_TITLE: '团队成员',
-  STARTER_TEAM_TEXT_1: '我们的开发者团队',
-  STARTER_TEAM_TEXT_2:
-    'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位<a className="underline" href="https://github.com/tangly1024/NotionNext/graphs/contributors">贡献者</a>',
- //
-  // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
-  STARTER_TEAM_ITEMS: [
-    {
-      STARTER_TEAM_ITEM_AVATAR:
-        'https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa06c61bb-980e-4180-bc18-c15f92c78bb4%2Ftangly1024.jpg?table=collection&id=8e7acf17-de09-4fa1-abde-b5b80ad4a813&t=8e7acf17-de09-4fa1-abde-b5b80ad4a813&width=100&cache=v2',
-      STARTER_TEAM_ITEM_NICKNAME: 'Tangly',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Developer'
-    },
-    {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-01.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Melissa Tatcher',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Marketing Expert'
-    },
-    {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-02.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Stuard Ferrel',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Digital Marketer'
-    },
-    {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/team-03.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Eva Hudson',
-      STARTER_TEAM_ITEM_DESCRIPTION: 'Creative Designer'
-    }
-  ],
-  */
+  STARTER_ABOUT_TIPS_1: '已服务20余个项目',
+  STARTER_ABOUT_TIPS_2: '生产30余套装配模组',
+  STARTER_ABOUT_TIPS_3: '已供货200000米C型钢',
 
   // 博客文章区块
   STARTER_BLOG_ENABLE: true, // 首页博文区块开关
