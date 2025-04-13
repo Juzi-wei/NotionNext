@@ -67,7 +67,7 @@ const CONFIG = {
   STARTER_ABOUT_BUTTON_TEXT: '了解更多',
   STARTER_ABOUT_BUTTON_URL: 'https://noteforms.com/forms/4vx4pd',
   STARTER_ABOUT_IMAGE_1: '/images/starter/about/about-image-03.jpg',
-  STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-05.png',
+  STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-06.png',
   STARTER_ABOUT_TIPS_1: '30+',
   STARTER_ABOUT_TIPS_2: '工程项目',
   STARTER_ABOUT_TIPS_3: '已完成服务',
