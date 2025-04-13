@@ -1,235 +1,137 @@
-/**
- * 另一个落地页主题
- */
 const CONFIG = {
-  // 默认只展示Logo文字，如果设置了logo图片，会在文字左侧显示图标
-  STARTER_LOGO: '', // 普通logo图片 示例：/images/starter/logo/logo.svg
-  STARTER_LOGO_WHITE: '', // 透明底浅色logo 示例： /images/starter/logo/logo-white.svg
+  // LOGO
+  STARTER_LOGO: '/images/logo.svg',
+  STARTER_LOGO_WHITE: '/images/logo-white.svg',
 
-  // MENU ， 菜单部分不在此处配置，请在Notion数据库中添加MENU
+  // 英雄区块
+  STARTER_HERO_ENABLE: true,
+  STARTER_HERO_TITLE_1: '高效装配式机电解决方案',
+  STARTER_HERO_TITLE_2: '助力建筑项目高效履约、降本增效',
+  STARTER_HERO_BUTTON_1_TEXT: '立即获取方案',
+  STARTER_HERO_BUTTON_1_URL: '/#contact',
+  STARTER_HERO_BUTTON_2_TEXT: '下载产品手册',
+  STARTER_HERO_BUTTON_2_URL: '/files/product-catalogue.pdf',
+  STARTER_HERO_BUTTON_2_ICON: '/images/icons/download.svg',
+  STARTER_HERO_PREVIEW_IMAGE: 'public/images/starter/hero/jidianmokuai.png',
+  STARTER_HERO_BANNER_IMAGE: '',
 
-  // 英雄区块导航
-  STARTER_HERO_ENABLE: true, // 开启英雄区
-  STARTER_HERO_TITLE_1: '装配式机电产品', // 英雄区文字
-  STARTER_HERO_TITLE_2: '在线产品手册', // 英雄区文字
-  // 英雄区两个按钮，如果TEXT留空则隐藏按钮
-  /*
-  STARTER_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
-  STARTER_HERO_BUTTON_1_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_ICON: '/images/starter/github.svg', // 英雄区按钮2的图标，不需要则留空
-  */ 
-  
-  // 英雄区配图，如需隐藏，改为空值即可 ''
-  STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片
-  STARTER_HERO_BANNER_IMAGE: '', // hero区下方的全宽图
-
-  // 顶部右侧导航暗流
-  /*
-  STARTER_NAV_BUTTON_1_TEXT: 'Sign In',
-  STARTER_NAV_BUTTON_1_URL: '/sign-in',
-
-  STARTER_NAV_BUTTON_2_TEXT: 'Sign Up',
-  STARTER_NAV_BUTTON_2_URL: '/sign-up',
-  */ 
-  
   // 特性区块
-  STARTER_FEATURE_ENABLE: true, // 特性区块开关
-  STARTER_FEATURE_TITLE: '特性', // 特性
-  STARTER_FEATURE_TEXT_1: '产品主要优势', // 特性
-  STARTER_FEATURE_TEXT_2:
-    '帮助您实现高效建造，完美履约 ', // 特性
+  STARTER_FEATURE_ENABLE: true,
+  STARTER_FEATURE_TITLE: '产品优势',
+  STARTER_FEATURE_TEXT_1: '专为机房与大型建筑项目定制',
+  STARTER_FEATURE_TEXT_2: '模块化、标准化、高效交付',
 
-  STARTER_FEATURE_1_TITLE_1: '完备的产品线', // 特性1
-  STARTER_FEATURE_1_TEXT_1: '提供完整的支吊架产品手册及全套检验报告', // 特性1
-   /*
-  STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
-  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 特性1
-  */ 
-  
-  STARTER_FEATURE_2_TITLE_1: '工程服齐全', // 特性2
-  STARTER_FEATURE_2_TEXT_1: '根据要求提供CAD、BIM方案设计、应力载荷计算及物料清单', // 特性2
-  /*
-  STARTER_FEATURE_2_BUTTON_TEXT: '了解更多', // 特性2
-  STARTER_FEATURE_2_BUTTON_URL:
-    'https://docs.tangly1024.com/article/notion-next-themes', // 特性2
-    */ 
-  
-  STARTER_FEATURE_3_TITLE_1: '专业的物流支持', // 特性3
-  STARTER_FEATURE_3_TEXT_1: '现场库存充足,严格管理及按时送货', // 特性3
-  /*
-  STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
-  STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
-  */ 
-  STARTER_FEATURE_4_TITLE_1: '施工前安装培训', // 特性4
-  STARTER_FEATURE_4_TEXT_1: '提高现场安装效率,并且实现安全安装', // 特性4
-    /*
-  STARTER_FEATURE_4_BUTTON_TEXT: '了解更多', // 特性4
-  STARTER_FEATURE_4_BUTTON_URL: 'https://docs.tangly1024.com/about', // 特性4
-  */ 
-  // 首页ABOUT区块
-  STARTER_ABOUT_ENABLE: true, // ABOUT区块开关
-  STARTER_ABOUT_TITLE: '一套配配式机房高效解决方案',
-  STARTER_ABOUT_TEXT:
-    '装配式设备模组。 <br /> <br /> 装配式预制构件',
+  STARTER_FEATURE_1_TITLE_1: '丰富的产品体系',
+  STARTER_FEATURE_1_TEXT_1: '涵盖支吊架、管线模组、桥架、工艺管道等全系列产品',
+
+  STARTER_FEATURE_2_TITLE_1: '定制化设计服务',
+  STARTER_FEATURE_2_TEXT_1: '提供BIM深化、应力计算、物料清单、施工图等设计方案',
+
+  STARTER_FEATURE_3_TITLE_1: '高效生产与交付',
+  STARTER_FEATURE_3_TEXT_1: '自有生产基地，标准化流程，确保项目准时交付',
+
+  STARTER_FEATURE_4_TITLE_1: '完善的售后支持',
+  STARTER_FEATURE_4_TEXT_1: '提供现场安装培训、技术指导，确保施工质量',
+
+  // 关于我们
+  STARTER_ABOUT_ENABLE: true,
+  STARTER_ABOUT_TITLE: '关于我们',
+  STARTER_ABOUT_TEXT: '我们专注于装配式机房系统、预制模块化产品，致力于为客户提供高效、可靠、经济的一体化解决方案。',
   STARTER_ABOUT_BUTTON_TEXT: '了解更多',
-  /*
-  STARTER_ABOUT_BUTTON_URL: 'https://docs.tangly1024.com/about',
-  */ 
-  STARTER_ABOUT_IMAGE_1: '/images/starter/about/about-image-01.jpg',
-  STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-02.jpg',
-  STARTER_ABOUT_TIPS_1: '已服务20余个项目',
-  STARTER_ABOUT_TIPS_2: '生产30余套装配模组',
-  STARTER_ABOUT_TIPS_3: '已供货200000米C型钢',
+  STARTER_ABOUT_BUTTON_URL: '/about',
+  STARTER_ABOUT_IMAGE_1: '/images/about/about-1.jpg',
+  STARTER_ABOUT_IMAGE_2: '/images/about/about-2.jpg',
+  STARTER_ABOUT_TIPS_1: '服务超30个大型项目',
+  STARTER_ABOUT_TIPS_2: '年产50+模块化方案',
+  STARTER_ABOUT_TIPS_3: '累计供货超300000米C型钢',
 
   // 博客文章区块
-  STARTER_BLOG_ENABLE: true, // 首页博文区块开关
-  STARTER_BLOG_TITLE: '我们的博客',
-  STARTER_BLOG_COUNT: 3, // 首页博文区块默认展示前3篇文章
-  STARTER_BLOG_TEXT_1: '最近的新闻',
-  STARTER_BLOG_TEXT_2:
-    '这里会发布一些关于NotionNext的最新动态，包括新的动向、新的未来计划，以及新功能的特性',
+  STARTER_BLOG_ENABLE: true,
+  STARTER_BLOG_TITLE: '行业动态',
+  STARTER_BLOG_COUNT: 3,
+  STARTER_BLOG_TEXT_1: '最新资讯',
+  STARTER_BLOG_TEXT_2: '聚焦装配式建筑、智能机房、机电工程行业趋势及项目案例',
 
-  // 联系模块
-  STARTER_CONTACT_ENABLE: true, // 联系模块开关
-  STARTER_CONTACT_TITLE: '联系我们',
-  STARTER_CONTACT_TEXT: '告诉我们您需要的产品',
-  STARTER_CONTACT_LOCATION_TITLE: '我们的位置',
-  STARTER_CONTACT_LOCATION_TEXT: '中国，江苏',
-  STARTER_CONTACT_EMAIL_TITLE: '我们如何帮助您？',
+  // 联系我们
+  STARTER_CONTACT_ENABLE: true,
+  STARTER_CONTACT_TITLE: '获取定制化解决方案',
+  STARTER_CONTACT_TEXT: '告诉我们您的项目需求，我们为您提供专属方案与报价',
+  STARTER_CONTACT_LOCATION_TITLE: '公司地址',
+  STARTER_CONTACT_LOCATION_TEXT: '江苏省 南京市',
+  STARTER_CONTACT_EMAIL_TITLE: '联系邮箱',
   STARTER_CONTACT_EMAIL_TEXT: 'chen-dehua@foxmail.com',
+  STARTER_CONTACT_MSG_EXTERNAL_URL: 'https://noteforms.com/forms/4vx4pd',
 
-  // 嵌入外部表单
-  STARTER_CONTACT_MSG_EXTERNAL_URL: 'https://noteforms.com/forms/yfctc7', // 基于NoteForm创建，将留言数据存在Notion中
-  //   自定义留言表单，以下几个配置暂时废弃
-  //   STARTER_CONTACT_MSG_TITLE: '向我们留言',
-  //   STARTER_CONTACT_MSG_NAME: '姓名',
-  //   STARTER_CONTACT_MSG_EMAIL: '邮箱地址',
-  //   STARTER_CONTACT_MSG_PHONE: '联系电话',
-  //   STARTER_CONTACT_MSG_TEXT: '消息内容',
-  //   STARTER_CONTACT_MSG_SEND: '发送消息',
-  //   STARTER_CONTACT_MSG_THANKS: '感谢您的留言',
-
-  // 合作伙伴的图标
-  STARTER_BRANDS_ENABLE: true, // 合作伙伴开关
+  // 合作伙伴
+  STARTER_BRANDS_ENABLE: true,
   STARTER_BRANDS: [
     {
-      IMAGE: '/images/starter/brands/graygrids.svg',
-      IMAGE_WHITE: '/images/starter/brands/graygrids-white.svg',
-      URL: 'https://graygrids.com/',
-      TITLE: 'graygrids'
+      IMAGE: '/images/brands/partner1.svg',
+      IMAGE_WHITE: '/images/brands/partner1-white.svg',
+      URL: 'https://partner1.com/',
+      TITLE: 'partner1'
     },
     {
-      IMAGE: '/images/starter/brands/lineicons.svg',
-      IMAGE_WHITE: '/images/starter/brands/lineicons-white.svg',
-      URL: 'https://lineicons.com/',
-      TITLE: 'lineicons'
-    },
-    {
-      IMAGE: '/images/starter/brands/uideck.svg',
-      IMAGE_WHITE: '/images/starter/brands/uideck-white.svg',
-      URL: 'https://uideck.com/',
-      TITLE: 'uideck'
-    },
-    {
-      IMAGE: '/images/starter/brands/ayroui.svg',
-      IMAGE_WHITE: '/images/starter/brands/ayroui-white.svg',
-      URL: 'https://ayroui.com/',
-      TITLE: 'ayroui'
-    },
-    {
-      IMAGE: '/images/starter/brands/tailgrids.svg',
-      IMAGE_WHITE: '/images/starter/brands/tailgrids-white.svg',
-      URL: '"https://tailgrids.com/',
-      TITLE: 'tailgrids'
+      IMAGE: '/images/brands/partner2.svg',
+      IMAGE_WHITE: '/images/brands/partner2-white.svg',
+      URL: 'https://partner2.com/',
+      TITLE: 'partner2'
     }
   ],
 
-  STARTER_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
+  // Footer
+  STARTER_FOOTER_SLOGAN: '用装配式技术，打造高效可靠机电系统',
 
-  // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
     {
-      TITLE: '关于我们',
+      TITLE: '官网导航',
       LINK_GROUP: [
-        { TITLE: '官方主页', URL: '/#home' },
-        { TITLE: '操作文档', URL: 'https://docs.tangly1024.com/about' },
-        {
-          TITLE: '帮助支持',
-          URL: 'https://docs.tangly1024.com/article/how-to-question'
-        },
-        {
-          TITLE: '合作申请',
-          URL: 'https://docs.tangly1024.com/article/my-service'
-        }
+        { TITLE: '首页', URL: '/#home' },
+        { TITLE: '关于我们', URL: '/about' },
+        { TITLE: '产品与服务', URL: '/#features' },
+        { TITLE: '联系我们', URL: '/#contact' }
       ]
     },
     {
-      TITLE: '功能特性',
+      TITLE: '资源下载',
       LINK_GROUP: [
-        {
-          TITLE: '部署指南',
-          URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next'
-        },
-        {
-          TITLE: '升级指南',
-          URL: 'https://docs.tangly1024.com/article/how-to-update-notionnext'
-        },
-        { TITLE: '最新版本', URL: 'https://docs.tangly1024.com/article/latest' }
-      ]
-    },
-    {
-      TITLE: 'Notion写作',
-      LINK_GROUP: [
-        {
-          TITLE: 'Notion开始写作',
-          URL: 'https://docs.tangly1024.com/article/start-to-write'
-        },
-        {
-          TITLE: '快捷键提升效率',
-          URL: 'https://docs.tangly1024.com/article/notion-short-key'
-        },
-        {
-          TITLE: '中国大陆使用Notion',
-          URL: 'https://docs.tangly1024.com/article/notion-faster'
-        }
+        { TITLE: '产品手册', URL: '/files/product-catalogue.pdf' },
+        { TITLE: 'BIM标准', URL: '/files/bim-guide.pdf' }
       ]
     }
   ],
 
-  STARTER_FOOTER_BLOG_LATEST_TITLE: '最新文章',
+  STARTER_FOOTER_BLOG_LATEST_TITLE: '最新动态',
 
   STARTER_FOOTER_PRIVACY_POLICY_TEXT: '隐私政策',
   STARTER_FOOTER_PRIVACY_POLICY_URL: '/privacy-policy',
 
   STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT: '法律声明',
-  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL: '/legacy-notice',
+  STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL: '/legal',
 
   STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT: '服务协议',
-  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '/terms-of-use',
+  STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL: '/terms',
 
-  // 404页面的提示语
-  STARTER_404_TITLE: '我们似乎找不到您要找的页面。',
-  STARTER_404_TEXT: '抱歉！您要查找的页面不存在。可能已经移动或删除。',
-  STARTER_404_BACK: '回到主页',
+  // 404 页面
+  STARTER_404_TITLE: '页面不存在',
+  STARTER_404_TEXT: '抱歉，您访问的页面已删除或不存在。',
+  STARTER_404_BACK: '返回首页',
 
-  /*
-  // 页面底部的行动呼吁模块
+  // CTA 行动号召
   STARTER_CTA_ENABLE: true,
-  STARTER_CTA_TITLE: '你还在等待什么呢？',
-  STARTER_CTA_TITLE_2: '现在开始吧',
-  STARTER_CTA_DESCRIPTION:
-    '访问NotionNext的操作文档，我们提供了详细的教程，帮助你即刻搭建站点',
-  STARTER_CTA_BUTTON: true, // 是否显示按钮
-  STARTER_CTA_BUTTON_URL:
-    'https://docs.tangly1024.com/article/vercel-deploy-notion-next',
-  STARTER_CTA_BUTTON_TEXT: '开始体验',
-  */
+  STARTER_CTA_TITLE: '现在就联系我们',
+  STARTER_CTA_TITLE_2: '定制属于您的机电系统解决方案',
+  STARTER_CTA_DESCRIPTION: '填写需求表单，或联系我们获取报价和设计服务',
+  STARTER_CTA_BUTTON: true,
+  STARTER_CTA_BUTTON_URL: '/#contact',
+  STARTER_CTA_BUTTON_TEXT: '获取报价',
 
+  // 文章重定向
   STARTER_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
-  STARTER_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
-  STARTER_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_STARTER_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
+  STARTER_POST_REDIRECT_URL: 'https://chendehua.vercel.app', // 重定向域名
+
+  // 邮件订阅
+  STARTER_NEWSLETTER: false
 }
+
 export default CONFIG
