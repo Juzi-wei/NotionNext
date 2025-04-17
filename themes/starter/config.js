@@ -67,7 +67,7 @@ const CONFIG = {
   STARTER_ABOUT_BUTTON_TEXT: '了解更多',
   STARTER_ABOUT_BUTTON_URL: 'https://noteforms.com/forms/4vx4pd',
   STARTER_ABOUT_IMAGE_1: '/images/starter/about/about-image-03.jpg',
-  STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-06.png',
+  STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-04.jpg',
   STARTER_ABOUT_TIPS_1: '30+',
   STARTER_ABOUT_TIPS_2: '工程项目',
   STARTER_ABOUT_TIPS_3: '已完成服务',
@@ -292,7 +292,7 @@ const CONFIG = {
     }
   ],
 
-  STARTER_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
+  STARTER_FOOTER_SLOGAN: '我们能够帮助您实现高效建造',
 
   // 页脚三列菜单组
   STARTER_FOOTER_LINK_GROUP: [
@@ -300,45 +300,45 @@ const CONFIG = {
       TITLE: '关于我们',
       LINK_GROUP: [
         { TITLE: '官方主页', URL: '/#home' },
-        { TITLE: '操作文档', URL: 'https://docs.tangly1024.com/about' },
+        { TITLE: '联系方式：0510-66950197', URL: '' },
         {
-          TITLE: '帮助支持',
-          URL: 'https://docs.tangly1024.com/article/how-to-question'
+          TITLE: '秦经理：15951386787',
+          URL: ''
         },
         {
-          TITLE: '合作申请',
-          URL: 'https://docs.tangly1024.com/article/my-service'
+          TITLE: '邹经理：13177858906',
+          URL: ''
         }
       ]
     },
     {
-      TITLE: '功能特性',
+      TITLE: '',
       LINK_GROUP: [
         {
-          TITLE: '部署指南',
-          URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next'
+          TITLE: '',
+          URL: ''
         },
         {
           TITLE: '升级指南',
-          URL: 'https://docs.tangly1024.com/article/how-to-update-notionnext'
+          URL: ''
         },
-        { TITLE: '最新版本', URL: 'https://docs.tangly1024.com/article/latest' }
+        { TITLE: '最新版本', URL: '' }
       ]
     },
     {
-      TITLE: 'Notion写作',
+      TITLE: '',
       LINK_GROUP: [
         {
-          TITLE: 'Notion开始写作',
-          URL: 'https://docs.tangly1024.com/article/start-to-write'
+          TITLE: '',
+          URL: ''
         },
         {
-          TITLE: '快捷键提升效率',
-          URL: 'https://docs.tangly1024.com/article/notion-short-key'
+          TITLE: '',
+          URL: ''
         },
         {
-          TITLE: '中国大陆使用Notion',
-          URL: 'https://docs.tangly1024.com/article/notion-faster'
+          TITLE: '',
+          URL: ''
         }
       ]
     }
