@@ -4,7 +4,7 @@ const CONFIG = {
 
   HEO_HOME_BANNER_ENABLE: true,
 
-  HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2025-04-17', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
   HEO_NOTICE_BAR: [
@@ -23,7 +23,7 @@ const CONFIG = {
   HEO_HERO_TITLE_3: 'AMREAL.CC',
   HEO_HERO_TITLE_4: '',
   HEO_HERO_TITLE_5: '朋友橘子的那些年',
-  HEO_HERO_TITLE_LINK: 'https://notion-blog-204ty7mi7-juzi-weis-projects.vercel.app',
+  HEO_HERO_TITLE_LINK: 'https://bento.me/juzi-chen',
   // 英雄区遮罩文字
   HEO_HERO_COVER_TITLE: '随便逛逛',
 
@@ -53,8 +53,8 @@ const CONFIG = {
   HEO_INFO_CARD_ICON1: 'fa-solid fa-headphones',
   HEO_INFO_CARD_URL2: 'https://space.bilibili.com/473628424?spm_id_from=333.1007.0.0',
   HEO_INFO_CARD_ICON2: 'fa-brands fa-bilibili',
-  HEO_INFO_CARD_URL3: 'https://www.yilinzazhi.com',
-  HEO_INFO_CARD_TEXT3: '意林',
+  HEO_INFO_CARD_URL3: 'https://bento.me/juzi-chen',
+  HEO_INFO_CARD_TEXT3: '了解更多',
 
   // 用户技能图标
   HEO_GROUP_ICONS: [
