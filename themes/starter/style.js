@@ -6,7 +6,8 @@
  * @returns
  */
 const Style = () => {
-  return <style jsx global>{`
+  return (
+    <style jsx global>{`
 
   #theme-starter .sticky{
     position: fixed;
@@ -156,42 +157,53 @@ const Style = () => {
     color: rgb(136 153 168 / var(--tw-text-opacity));
   }
 
-  
-.common-carousel .swiper-button-next:after,
-.common-carousel .swiper-button-prev:after{
-  display: none;
-}
+  /* 给Notion博客中的图片加上圆角和重一点的阴影效果 */
+  .notion img {
+    border-radius: 8px; /* 圆角效果 */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 16px; /* 更重的阴影效果 */
+  }
 
-.common-carousel .swiper-button-next,
-.common-carousel .swiper-button-prev{
-  position: static !important;
-  margin: 0px;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 0.5rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(17 25 40 / var(--tw-text-opacity));
-  --tw-shadow: 0px 8px 15px 0px rgba(72, 72, 138, 0.08);
-  --tw-shadow-colored: 0px 8px 15px 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
+  /* 对.carousel组件内的图片也添加圆角和阴影效果 */
+  .common-carousel img {
+    border-radius: 8px; /* 圆角效果 */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 6px 16px; /* 更重的阴影效果 */
+  }
 
-.common-carousel .swiper-button-next:hover,
-.common-carousel .swiper-button-prev:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
+  .common-carousel .swiper-button-next:after,
+  .common-carousel .swiper-button-prev:after{
+    display: none;
+  }
 
-:is(.dark .common-carousel .swiper-button-next),:is(.dark 
+  .common-carousel .swiper-button-next,
+  .common-carousel .swiper-button-prev{
+    position: static !important;
+    margin: 0px;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(17 25 40 / var(--tw-text-opacity));
+    --tw-shadow: 0px 8px 15px 0px rgba(72, 72, 138, 0.08);
+    --tw-shadow-colored: 0px 8px 15px 0px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .common-carousel .swiper-button-next:hover,
+  .common-carousel .swiper-button-prev:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  :is(.dark .common-carousel .swiper-button-next),:is(.dark 
 .common-carousel .swiper-button-prev){
   --tw-bg-opacity: 1;
   background-color: rgb(17 25 40 / var(--tw-bg-opacity));
@@ -205,6 +217,7 @@ const Style = () => {
   width: auto;
 }
   `}</style>
+  )
 }
 
 export { Style }
