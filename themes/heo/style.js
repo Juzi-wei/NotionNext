@@ -61,9 +61,14 @@ const Style = () => {
           transform: translateX(-50%);
         }
       }
+
+      /* 给Notion博客中的图片加上圆角和阴影效果 */
+      .notion img {
+        border-radius: 8px; /* 圆角效果 */
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; /* 阴影效果 */
+      }
     `}</style>
-  )
-}
+  );
+};
 
-export { Style }
-
+export { Style };
